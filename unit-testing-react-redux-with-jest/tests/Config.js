@@ -1,5 +1,5 @@
-import { configure } from '../../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/enzyme';
-import Adapter from '../../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/enzyme-adapter-react-16';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 if (typeof window !== 'undefined') {
     const matchMediaPolyfill = function matchMediaPolyfill(mediaQuery) {
