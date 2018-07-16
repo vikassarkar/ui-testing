@@ -1,4 +1,4 @@
-import fetch from "../../../../../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/isomorphic-fetch";
+import fetch from "isomorphic-fetch";
 
 //Mocking Real Api"s works on open network
 // const headers = {

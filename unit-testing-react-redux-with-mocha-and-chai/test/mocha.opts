@@ -1,0 +1,14 @@
+--ui bdd
+--colors
+--require babel-core/register
+--require ./test/Config.js
+./test/**/*test.jsx
+./test/**/*test.js
+--recursive
+
+
+#######
+##for ts 
+##--compilers ts-node/register (for .nycrc as well)
+##--require source-map-support/register
+#######

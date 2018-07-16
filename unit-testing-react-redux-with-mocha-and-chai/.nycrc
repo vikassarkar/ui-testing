@@ -1,0 +1,37 @@
+
+{
+  "register": "babel-register",
+  "include": [
+    "src/views/*.js",
+    "src/views/*.jsx",
+    "src/views/**/*.js",
+    "src/views/**/*.jsx",
+    "src/store/**/*.js"
+  ],
+  "exclude": [
+    "dist",
+    "test",
+    "__coverage__",
+    "node_modules",
+    ".nyc_output",
+    "**/*.d.ts"
+  ],
+  "extension": [
+    ".js",
+    ".jsx"
+  ],
+  "require": [
+    "babel-register"
+  ],
+  "reporter": [
+    "text",
+    "html"
+  ],
+  "statements": 50,
+  "branches": 50,
+  "functions": 80,
+  "lines": 80,
+  "check-coverage": true,
+  "report-dir": "./__coverage__",
+  "all": true
+}

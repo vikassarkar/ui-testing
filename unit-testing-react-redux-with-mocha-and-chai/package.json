@@ -7,40 +7,15 @@
     "es6",
     "webpack"
   ],
-  "nyc": {
-    "check-coverage": false,
-    "per-file": true,
-    "lines": 80,
-    "statements": 50,
-    "functions": 80,
-    "branches": 50,
-    "include": [
-      "./src/App.tsx",
-      "./src/views/*.tsx",
-      "./src/views/*/*.tsx",
-      "./src/store/Actions.ts",
-      "./src/store/Reducers.ts",
-      "./src/utils/*.ts",
-      "./src/utils/*/*.ts"
-    ],
-    "exclude": [
-      "./tests/**/*.spec.js"
-    ],
-    "reporter": [
-      "html",
-      "text-summary"
-    ],
-    "instrument": false,
-    "sourceMap": false
-  },
   "scripts": {
     "start": "webpack-dev-server -w --config webpack.dev.config.js",
     "build": "webpack --progress",
-    "test": "mocha --require babel-core/register --require ./tests/Config.js \"./tests/**/*test.jsx\" \"./tests/**/*test.js\" \"./tests/**/*spec.jsx\" \"./tests/**/*test.js\" --recursive",
-    "coverage": "nyc --reporter=text npm run test",
+    "test": "mocha",
+    "report": "nyc report",
+    "coverage": "nyc mocha",
     "test-watch": "npm test -- --watch"
   },
-  "author": "pooja rathore",
+  "author": "Vikas sarkar",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
@@ -48,8 +23,8 @@
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
-    "redux": "^3.7.2",
     "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "webpack": "^4.1.1"
   },

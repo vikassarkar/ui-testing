@@ -3,24 +3,27 @@
   "notify": true,
   "notifyMode": "failure-success",
   "collectCoverageFrom": [
-    "<rootDir>/src/views/*.tsx",
-    "<rootDir>/src/views/*/*.tsx",
-    "<rootDir>/src/store/action/*.ts",
-    "<rootDir>/src/store/reducer/*.ts"
+    "<rootDir>/src/views/*.js",
+    "<rootDir>/src/views/*.jsx",
+    "<rootDir>/src/views/**/*.js",
+    "<rootDir>/src/views/**/*.jsx",
+    "<rootDir>/src/store/**/*.js"
   ],
   "collectCoverage": false,
   "coverageDirectory": "<rootDir>/__coverage__/",
   "coveragePathIgnorePatterns": [
     "<rootDir>/node_modules/",
     "<rootDir>/dist/",
+    "<rootDir>/test",
+    "<rootDir>/__coverage__"
   ],
   "coverageReporters": ["html", "text"],
   "coverageThreshold": {
     "global": {
+      "statements": 50,
       "branches": 50,
       "functions": 80,
-      "lines": 80,
-      "statements": 50
+      "lines": 80
     }
   },
   "setupFiles": [
@@ -39,9 +42,7 @@
   // },
   "moduleFileExtensions": [
     "js",
-    "jsx",
-    "ts",
-    "tsx"
+    "jsx"
   ],
   "transformIgnorePatterns": [
     "<rootDir>/node_modules/"
