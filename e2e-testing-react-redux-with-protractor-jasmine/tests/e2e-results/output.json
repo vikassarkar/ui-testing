@@ -1,0 +1,20 @@
+[
+  {
+    "description": "Protractor Demo should display the name of the application",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 14381
+  },
+  {
+    "description": "Protractor Demo should click the create Paste button",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 1314
+  }
+]
