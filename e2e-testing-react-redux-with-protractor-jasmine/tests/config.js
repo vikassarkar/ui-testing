@@ -54,19 +54,6 @@ const createReportsFolder = function () {
 }();
 
 
-//module.exports = function(options) {
-const myReporter = function() {
-    const reporter = [specReport, sanityReport, videoReport];
-    if (reporter) {
-      (Array.isArray(reporter) ? reporter : [reporter]).forEach(function (el) {
-        jasmine.addReporter(el);
-      });
-    }else{
-        jasmine.addReporter(specReport);
-    }
-  };
-
-
 exports.config = {
     allScriptsTimeout: 11000,
     framework: "jasmine",

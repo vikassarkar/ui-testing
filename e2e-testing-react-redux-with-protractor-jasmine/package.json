@@ -20,7 +20,7 @@
     "remove:node": "rimraf ./node_modules",
     "remove:report": "rimraf ./__report__/",
     "test": "protractor ./tests/config.js",
-    "sanity": "concurrently \"npm run start:server\" \"npm run test\"",
+    "sanity:local": "concurrently \"npm run start:server\" \"npm run test\"",
     "build": "webpack --progress"
   },
   "author": "Vikas sarkar",
@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "easy-zip": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
     "jasmine": "^3.1.0",
     "jasmine-spec-reporter": "^4.2.1",
